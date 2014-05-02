@@ -57,7 +57,7 @@ public class Ball extends PhysicsElement implements SpringAttachable{
      if ((b=world.findCollidingBall(this))!= null){ /* elastic collision */
         speed_tPlusDelta=(speed_t*(mass-b.getMass())+2*b.getMass()*b.getSpeed())/(mass+b.getMass());
         a_t= getNetForce()/mass;
-        pos_tPlusDelta = pos_t + a_t*delta_t*delta_t + speed_t*delta_t;
+        pos_tPlusDelta = pos_t + speed_tPlusDelta*delta_t + a_t*delta_t*delta_t;
         //System.out.println("Colision");
      } else {
     	 a_tMinusDelta = a_t;
