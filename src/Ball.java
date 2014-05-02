@@ -85,6 +85,6 @@ public class Ball extends PhysicsElement implements SpringAttachable{
    }
    
    public String getDescription() {
-	   return "Ball."+this.getId();
+	   return "Ball_"+this.getId();
    }
 }
