@@ -33,7 +33,7 @@ public class FixedHook extends PhysicsElement implements SpringAttachable{
 	}
 	
 	public String getDescription() {
-		return "FixedHook."+this.getId();
+		return "FixedHook_"+this.getId();
 	}
 
 	public String getState() {
